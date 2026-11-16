@@ -1,0 +1,10 @@
+[package]
+name = "SigmaOS-threadsanitizer"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS threadsanitizer component - development"
+
+[lib]
+name = "threadsanitizer"
+path = "src/lib.rs"

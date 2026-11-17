@@ -3,7 +3,7 @@ name = "SigmaOS-threadsanitizer"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "threadsanitizer component"
+description = "ThreadSanitizer"
 upstream = []
 
 [contract]

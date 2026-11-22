@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-threadsanitizer Component Wiki
+# SigmaOS-threadsanitizer Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-threadsanitizer provides ThreadSanitizer for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-threadsanitizer provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-threadsanitizer Abstraction
-- Fail-Fast on SigmaOS-threadsanitizer Initialization Errors
-- Deterministic SigmaOS-threadsanitizer Setup
-- Clear Abstraction Over SigmaOS-threadsanitizer APIs
-- Composition over Inheritance for SigmaOS-threadsanitizer extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-threadsanitizer Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-threadsanitizer Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-threadsanitizer Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-threadsanitizer APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-threadsanitizer extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-threadsanitizer follows a SigmaOS-threadsanitizer pattern:
+SigmaOS-threadsanitizer follows a SigmaOS-threadsanitizer pattern:
 - **SigmaOS-threadsanitizer Core**: Provides SigmaOS-threadsanitizer support, SigmaOS-threadsanitizer management, and SigmaOS-threadsanitizer tracking
 - **Management**: Supports SigmaOS-threadsanitizer management, SigmaOS-threadsanitizer configuration, and SigmaOS-threadsanitizer lifecycle
 - **Tracking**: Supports SigmaOS-threadsanitizer status, SigmaOS-threadsanitizer tracking, and SigmaOS-threadsanitizer lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-threadsanitizer follows a SigmaOS-threadsanitizer pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-threadsanitizer by given configuration
--  - Register a SigmaOS-threadsanitizer by given name
--  - Get SigmaOS-threadsanitizer status and SigmaOS-threadsanitizer availability
--  - Track SigmaOS-threadsanitizer management and SigmaOS-threadsanitizer tracking
+- Manage a SigmaOS-threadsanitizer by given configuration
+- Register a SigmaOS-threadsanitizer by given name
+- Get SigmaOS-threadsanitizer status and SigmaOS-threadsanitizer availability
+- Track SigmaOS-threadsanitizer management and SigmaOS-threadsanitizer tracking
 - Error types for SigmaOS-threadsanitizer failure scenarios or unsupported SigmaOS-threadsanitizer types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-threadsanitizer init, SigmaOS-threadsanitizer management)
 3. **Assert**: Verify the expected SigmaOS-threadsanitizer results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-threadsanitizer initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-threadsanitizer failure scenarios
 - Unit tests provided for SigmaOS-threadsanitizer management and configuration
